@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: native-web-api
+  config:
+    activate:
+      on-profile: local
+
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/native_web?useSSL=false&serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: wmf153546@
+
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml # XML 매퍼 파일 경로
+  configuration:
+    map-underscore-to-camel-case: true # 카멜 케이스 자동 변환 (예: user_id -> userId)
+
