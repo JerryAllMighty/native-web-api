@@ -19,6 +19,8 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
+
     // Spring Boot 4.1.1과 호환되는 MyBatis Starter
     implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:4.1.0'
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
